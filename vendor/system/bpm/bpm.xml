@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<gs>
+    <!-- Instant Messaging -->
+    <p att="com.baidu.BaiduMap"></p>
+    <p att="com.yy.yymeet"></p>
+    <p att="com.sogou.map.android.maps"></p>
+    <p att="com.autonavi.xmgd.navigator"></p>
+    <p att="com.tencent.mm"></p>
+    <p att="com.immomo.momo"></p>
+    <p att="com.tencent.mobileqq"></p>
+    <p att="com.sina.weibo"></p>
+    <p att="com.tencent.qqphonebook"></p>
+    <p att="com.tencent.Wblog"></p>
+    <p att="jp.naver.line.android"></p>
+    <p att="com.oppo.wearable"></p>
+    <p att="com.oppo.ubeauty"></p>
+
+    <!-- add for the oppo app  -->
+    <p att="com.nearme.note"></p>
+    <p att="com.oppo.ubeauty"></p>
+    <p att="com.tencent.tvoem"></p>
+
+</gs>

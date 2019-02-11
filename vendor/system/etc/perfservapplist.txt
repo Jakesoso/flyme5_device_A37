@@ -1,0 +1,5 @@
+com.imangi.templerun2 3
+com.tencent.karaoke 5
+CMD_SET_ROOT_CLUSTER com.tencent.mm 1
+CMD_SET_CPUFREQ_HISPEED_FREQ com.tencent.mm 910000
+CMD_SET_ROOT_CLUSTER com.cmcc.mobilevideo 0

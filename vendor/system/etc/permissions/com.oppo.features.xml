@@ -1,0 +1,29 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<permissions>
+        <feature name="oppo.hw.manufacturer.mtk" />
+        <feature name="mtk.gemini.support" />
+        <feature name="oppo.inexact.alarm" />
+        <feature name="oppo.memory.auto.clean" />
+        <feature name="oppo.filtrated.app" />
+        <feature name="oppo.screen.hovering.support" />
+        <feature name="oppo.black.gesture.proximitysensor.support" />
+        <feature name="oppo.brightness.mode.automatic" />
+        <feature name="oppo.breath.light.support" />
+        <feature name="oppo.otg.connection.menu.support" />
+        <feature name="android.hardware.usb.host" />
+        <feature name="oppo.app2sd.disabled" />
+        <feature name="oppo.guard.elf.support" />
+        <feature name="oppo.memory.auto.deep.clean" />
+        <!-- new battery notify node for MT6755,QCOM8976 and new platform -->
+        <feature name="oppo.battery.notify.new" />
+        <feature name="oppo.support.single.partition" />
+        <feature name="oppo.commcenter.reboot.dialog" />
+        <feature name="oppo.volte.support" />
+        <feature name="oppo.disable.small.window.leather" />
+        <!-- Linjie.Xu@Swdp.Android.Storage, 2015/10/23, Add for disable full disk encryption -->
+        <feature name="oppo.fulldiskencryption.unsupported" />
+        <!-- guoling@MultiMedia, 2016/03/10, Add for autobrightctl animation support -->
+        <feature name="oppo.autobrightctl.animation.support" />
+        <!-- Runsheng.Pei@Swdp.Android.Ams.Broadcast.Optimize, 2016/02/01, add for oppo broadcast optimize: -->
+        <feature name="oppo.ams.broadcast.oppobt" />
+</permissions>
