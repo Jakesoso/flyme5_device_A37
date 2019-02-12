@@ -300,45 +300,37 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 383
     invoke-direct {p0, p1}, Landroid/app/WallpaperManager$Globals;->openDefaultWallpaperRes(Landroid/content/Context;)Ljava/io/InputStream;
 
     move-result-object v3
 
-    .line 384
     .local v3, "is":Ljava/io/InputStream;
     if-eqz v3, :cond_0
 
-    .line 386
     :try_start_0
     new-instance v4, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v4}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 388
     .local v4, "options":Landroid/graphics/BitmapFactory$Options;
     const/4 v7, 0x1
 
     iput-boolean v7, v4, Landroid/graphics/BitmapFactory$Options;->inPostProc:Z
 
-    .line 389
     const/4 v7, 0x1
 
     iput v7, v4, Landroid/graphics/BitmapFactory$Options;->inPostProcFlag:I
 
-    .line 396
     iget-object v7, p0, Landroid/app/WallpaperManager$Globals;->mService:Landroid/app/IWallpaperManager;
 
     if-eqz v7, :cond_1
 
-    .line 397
     iget-object v7, p0, Landroid/app/WallpaperManager$Globals;->mService:Landroid/app/IWallpaperManager;
 
     invoke-interface {v7}, Landroid/app/IWallpaperManager;->getWidthHint()I
 
     move-result v5
 
-    .line 398
     .local v5, "width":I
     iget-object v7, p0, Landroid/app/WallpaperManager$Globals;->mService:Landroid/app/IWallpaperManager;
 

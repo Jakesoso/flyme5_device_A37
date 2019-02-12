@@ -8290,12 +8290,10 @@
 
     if-eqz v4, :cond_3a
 
-    .line 1142
     monitor-exit v39
 
     goto/16 :goto_3
 
-    .line 1145
     :cond_3a
     move-object/from16 v0, p0
 
@@ -8346,7 +8344,7 @@
 
     const/4 v13, 0x0
 
-    invoke-virtual/range {v4 .. v13}, Lcom/android/server/am/ActivityManagerService;->startProcessLocked(Ljava/lang/String;Landroid/content/pm/ApplicationInfo;ZILjava/lang/String;Landroid/content/ComponentName;ZZZ)Lcom/android/server/am/ProcessRecord;
+    invoke-virtual/range {v4 .. v13}, Lcom/android/server/am/ActivityManagerService;->hook_startProcessLocked(Ljava/lang/String;Landroid/content/pm/ApplicationInfo;ZILjava/lang/String;Landroid/content/ComponentName;ZZZ)Lcom/android/server/am/ProcessRecord;
 
     move-result-object v4
 
