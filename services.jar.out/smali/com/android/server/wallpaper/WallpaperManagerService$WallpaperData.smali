@@ -15,8 +15,6 @@
 
 
 # instance fields
-.field mFlymeData:Lcom/android/server/wallpaper/FlymeWallpaperService$FlymeWallpaperData;
-
 .field private callbacks:Landroid/os/RemoteCallbackList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -35,6 +33,8 @@
 .field imageWallpaperPending:Z
 
 .field lastDiedTime:J
+
+.field mFlymeData:Lcom/android/server/wallpaper/FlymeWallpaperService$FlymeWallpaperData;
 
 .field name:Ljava/lang/String;
 
@@ -59,7 +59,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/android/server/wallpaper/WallpaperManagerService;I)V
-    .locals 3
+    .registers 6
     .param p2, "userId"    # I
 
     .prologue
@@ -106,7 +106,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_33
 
     .line 522
     new-instance v0, Ljava/io/File;
@@ -123,11 +123,11 @@
     iput-object v0, p0, Lcom/android/server/wallpaper/WallpaperManagerService$WallpaperData;->wallpaperFile:Ljava/io/File;
 
     .line 526
-    :goto_0
+    :goto_32
     return-void
 
     .line 524
-    :cond_0
+    :cond_33
     new-instance v0, Ljava/io/File;
 
     # invokes: Lcom/android/server/wallpaper/WallpaperManagerService;->getWallpaperDir(I)Ljava/io/File;
@@ -141,11 +141,13 @@
 
     iput-object v0, p0, Lcom/android/server/wallpaper/WallpaperManagerService$WallpaperData;->wallpaperFile:Ljava/io/File;
 
-    goto :goto_0
+    invoke-direct/range {p0 .. p0}, Lcom/android/server/wallpaper/WallpaperManagerService$WallpaperData;->initFlymeWallpaperData()V
+
+    goto :goto_32
 .end method
 
 .method static synthetic access$1500(Lcom/android/server/wallpaper/WallpaperManagerService$WallpaperData;)Landroid/os/RemoteCallbackList;
-    .locals 1
+    .registers 2
     .param p0, "x0"    # Lcom/android/server/wallpaper/WallpaperManagerService$WallpaperData;
 
     .prologue
@@ -155,9 +157,8 @@
     return-object v0
 .end method
 
-
 .method private initFlymeWallpaperData()V
-    .locals 1
+    .registers 2
 
     .prologue
     new-instance v0, Lcom/android/server/wallpaper/FlymeWallpaperService$FlymeWallpaperData;

@@ -17,7 +17,7 @@
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
-    .locals 4
+    .registers 6
     .param p1, "context"    # Landroid/content/Context;
     .annotation build Landroid/annotation/OppoHook;
         level = .enum Landroid/annotation/OppoHook$OppoHookType;->CHANGE_CODE:Landroid/annotation/OppoHook$OppoHookType;
@@ -28,7 +28,7 @@
     .prologue
     const/high16 v3, 0x20000
 
-    const v1, 0xc030007
+    sget v1, Lcom/flyme/internal/R$style;->Theme_Flyme_Light_Dialog_Alert:I
 
     invoke-direct {p0, p1, v1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
 
@@ -84,7 +84,7 @@
 .end method
 
 .method static synthetic access$002(Lcom/android/server/am/BaseErrorDialog;Z)Z
-    .locals 0
+    .registers 2
     .param p0, "x0"    # Lcom/android/server/am/BaseErrorDialog;
     .param p1, "x1"    # Z
 
@@ -96,7 +96,7 @@
 .end method
 
 .method static synthetic access$100(Lcom/android/server/am/BaseErrorDialog;Z)V
-    .locals 0
+    .registers 2
     .param p0, "x0"    # Lcom/android/server/am/BaseErrorDialog;
     .param p1, "x1"    # Z
 
@@ -108,11 +108,11 @@
 .end method
 
 .method private setEnabled(Z)V
-    .locals 2
+    .registers 4
     .param p1, "enabled"    # Z
 
     .prologue
-    const v1, #android:id@button1#t
+    const v1, 0x1020019
 
     invoke-virtual {p0, v1}, Lcom/android/server/am/BaseErrorDialog;->findViewById(I)Landroid/view/View;
 
@@ -122,14 +122,14 @@
 
     .line 74
     .local v0, "b":Landroid/widget/Button;
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_e
 
     .line 75
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 77
-    :cond_0
-    const v1, #android:id@button2#t
+    :cond_e
+    const v1, 0x102001a
 
     invoke-virtual {p0, v1}, Lcom/android/server/am/BaseErrorDialog;->findViewById(I)Landroid/view/View;
 
@@ -140,14 +140,14 @@
 
     .line 78
     .restart local v0    # "b":Landroid/widget/Button;
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_1c
 
     .line 79
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 81
-    :cond_1
-    const v1, #android:id@button3#t
+    :cond_1c
+    const v1, 0x102001b
 
     invoke-virtual {p0, v1}, Lcom/android/server/am/BaseErrorDialog;->findViewById(I)Landroid/view/View;
 
@@ -158,45 +158,45 @@
 
     .line 82
     .restart local v0    # "b":Landroid/widget/Button;
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_2a
 
     .line 83
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 85
-    :cond_2
+    :cond_2a
     return-void
 .end method
 
 
 # virtual methods
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
-    .locals 1
+    .registers 3
     .param p1, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 64
     iget-boolean v0, p0, Lcom/android/server/am/BaseErrorDialog;->mConsuming:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_6
 
     .line 66
     const/4 v0, 0x1
 
     .line 69
-    :goto_0
+    :goto_5
     return v0
 
-    :cond_0
+    :cond_6
     invoke-super {p0, p1}, Landroid/app/AlertDialog;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result v0
 
-    goto :goto_0
+    goto :goto_5
 .end method
 
 .method public onStart()V
-    .locals 4
+    .registers 5
 
     .prologue
     .line 58
