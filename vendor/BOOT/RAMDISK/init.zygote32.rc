@@ -1,0 +1,11 @@
+service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-system-server
+    class main
+    socket zygote stream 660 root system
+    onrestart write /sys/android_power/request_state wake
+    onrestart write /sys/power/state on
+    onrestart restart media
+    onrestart restart netd
+#ifdef VENDOR_EDIT
+#KeZhi.Zhu@Swdp.Android.Fingerprint.Wechatpay, 2016/04/27, restart keystore when system_server restarts.
+    onrestart restart keystore
+#endif /* VENDOR_EDIT */

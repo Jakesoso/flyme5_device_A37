@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<filter-conf>
+    <version>20160217</version>
+    <isOpen>1</isOpen>
+    <filter-name>sys_luckymoney_config_list</filter-name>
+    <keyURLinfo>hongbao/img/hb.png</keyURLinfo>
+    <keyDNSinfo>wx.gtimg.com</keyDNSinfo>
+    <delayTimeout>6001</delayTimeout>
+    <Qtag>MSF.C.CodecWarpper</Qtag>
+    <Qmsg>pushnotify add timestamp</Qmsg>
+</filter-conf>

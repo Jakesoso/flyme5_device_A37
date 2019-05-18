@@ -1,0 +1,4 @@
+com.qiyi.video 50
+com.taobao.taobao  50
+com.jingdong.app.mall  50
+com.kiloo.subwaysurf  54

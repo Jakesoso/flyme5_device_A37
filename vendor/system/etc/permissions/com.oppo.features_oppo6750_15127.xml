@@ -1,0 +1,12 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<permissions>
+    <feature name="oppo.soundeffect.support" />
+    <feature name="oppo.dirac.support" />
+    <feature name="oppo.gallery.opencabc" />
+    <feature name="oppo.speechassist.speed.dial.unsupport" />
+    <feature name="oppo.disable.small.window.leather.endcallview" />
+    <feature name="oppo.cabc.support" />
+    <feature name="oppo.area.gradient.enable" />
+    <!-- Bin.Wang@Plf.Framework, 2016/05/10, Add for screen on low memory clear -->
+    <feature name="oppo.lowramclear.support" />
+</permissions>

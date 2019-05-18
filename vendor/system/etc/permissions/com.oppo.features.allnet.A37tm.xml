@@ -1,0 +1,9 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<permissions>
+	<feature name="oppo.all.client" />
+	<feature name="oppo.all.mp" />
+	<feature name="oppo.all.client_7_5" />
+	<feature name="oppo.all.cmcc" />
+	<feature name="android.hardware.nfc" />
+	<feature name="oppo.R5127" />
+</permissions>
